@@ -3,7 +3,7 @@ data "aws_ami" "default_ami" {
   owners      = ["amazon"]
   filter {
     name   = "architecture"
-    values = [var.ec2_vars.architecture]
+    values = [var.ec2_data.architecture]
   }
 
   filter {

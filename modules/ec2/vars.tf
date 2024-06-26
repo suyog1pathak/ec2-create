@@ -11,7 +11,7 @@ variable "sg_names" {
   type        = list(string)
 }
 
-variable "ec2_vars" {
+variable "ec2_data" {
   description = "Configuration for EC2 instances"
   type = object({
     name           = string

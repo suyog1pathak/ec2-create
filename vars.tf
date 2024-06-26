@@ -23,7 +23,7 @@ variable "sg_names" {
 
 
 
-variable "ec2_vars" {
+variable "ec2_data" {
   description = "Configuration for EC2 instances"
   type = list(object({
     name           = string
@@ -80,7 +80,7 @@ variable "ec2_vars" {
 }
 
 
-variable "sg_vars" {
+variable "sg_data" {
   description = "A list of security groups to create"
   type = list(object({
     name        = string

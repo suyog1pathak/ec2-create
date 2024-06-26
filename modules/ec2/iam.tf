@@ -1,5 +1,5 @@
 resource "aws_iam_role" "ssm_role" {
-  name = "ssm_role-${var.ec2_vars.name}"
+  name = "ssm_role-${var.ec2_data.name}"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
